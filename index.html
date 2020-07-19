@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Duolyrics</title>
+  <meta name="description" content="">
+  <meta name="author" content="SitePoint">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="1024-removebg-preview.png"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arvo" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+  <!--Following script creates text fade-in-->
+  <script>
+    $(document).ready(function () {
+    $('div.apDiv1').fadeIn(1500).removeClass('apDiv1');
+});
+
+</script>
+
+<script type="text/javascript">
+$(function() { // on document load
+    changer();
+});
+
+function changer() {
+    var words = ["Disfrutar","즐기다", "للإستمتاع", "Apprécier"]; // add as many as you like
+    var idx = Math.floor(words.length * Math.random());  // randomizer
+    $('#change').text(words[idx]); // replaces the contents of "change"
+    var time = 1000;  // in milliseconds
+    setTimeout(changer,time);  // lather, rinse, repeat
+}
+</script>
+
+</head>
+
+<body>
+
+  <!--Intro-->
+  <div class = "section-1">
+
+    <!--The video-->
+    <video id = "ds" autoplay loop muted class="vid">
+      <source src = "Duolyrics Landing Page Video.mp4" type = "video/mp4">
+    </video>
+
+    <!--The text-->
+    <div class= "apDiv1">
+      <h1 id = "the_h1">Duolyrics</h1>
+      <h2 id = "the_h2">Learn a new language, one song at a time.</h2>
+    </div>
+
+    <!--The Arrow-->
+    <div class = "box">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+
+    </div>
+
+    <!--Disfrutar: To Enjoy-->
+      <div id = "apDiv2" data-aos="fade-left">
+        <h1 id = "disfrutar">
+          <span id = "change"">Disfrutar</span> means
+        <span class = "highlight">To Enjoy</span></h1>
+      </div>
+      <div class="row">
+  <div class="column-1" data-aos="fade-up">
+    <img src="duolyrics_diver_3.png" alt="Snow" style="width:60%">
+  </div>
+  <div class="column-2">
+    <img src = "1024-removebg-preview.png" height = 70%></img>
+    <h1 data-aos ="fade-right">Your favorite artists. </h1>
+    <h1 data-aos ="fade-left">Your favorite songs. </h1>
+    <h1 data-aos = "fade-up"> Dive into the hottest music in the world line by line, and word by word.</h1>
+      </div>
+  <div class="column-3" data-aos="fade-up">
+    <img src="duolyrics_diver_2.png" alt="Forest" style="width:60%">
+  </div>
+</div>
+
+<div id = "apDiv3">
+</div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000
+        });
+      </script>
+      <script src="js/app.js" defer></script>
+
+</body>
+</html>
